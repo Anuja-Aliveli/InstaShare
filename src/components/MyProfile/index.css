@@ -1,0 +1,72 @@
+.profile-container {
+  min-height: 100vh;
+  font-family: 'Roboto';
+  display: flex;
+  flex-direction: column;
+}
+.container-profile-page {
+  align-self: center;
+  width: 80%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.not-found-image {
+  width: 200px;
+  height: 200px;
+}
+.failure-text {
+  color: #000;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 500;
+}
+.try-button {
+  background-color: #4094ef;
+  color: #ffffff;
+  height: 30px;
+  width: 100px;
+  border-radius: 8px;
+  outline: none;
+  cursor: pointer;
+  border: none;
+}
+.story-view-container {
+  width: 70%;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  margin-top: 30px;
+}
+.loader-container-story {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.view-name {
+  color: #ffffff;
+  font-size: 20px;
+}
+.close-icon-story {
+  font-size: 20px;
+  color: #ffffff;
+  outline: none;
+  cursor: pointer;
+}
+.view-image {
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 576px) {
+  .story-view-container {
+    width: 100%;
+    height: 80vh;
+    margin-top: 0;
+  }
+}

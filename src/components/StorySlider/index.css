@@ -1,0 +1,76 @@
+/* index.css */
+.slider-container {
+  height: 20vh;
+  font-family: 'Roboto';
+}
+
+.each-story {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.each-story-image {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin: 0 auto;
+  cursor: pointer;
+  outline: none;
+}
+
+.each-story-name {
+  color: black;
+  font-size: 15px;
+  text-align: center;
+}
+.container-story {
+  width: 100%;
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.reload-icon {
+  font-size: 40px;
+}
+.story-view-container {
+  width: 70%;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  margin-top: 30px;
+}
+.loader-container-story {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+padding-left: 20px;  
+padding-right: 20px;
+}
+.view-name {
+  color: #ffffff;
+  font-size: 20px;
+}
+.close-icon-story {
+  font-size: 20px;
+  color: #ffffff;
+  outline: none;
+  cursor: pointer;
+}
+.view-image {
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 576px) {
+  .story-view-container {
+    width: 100%;
+    height: 80vh;
+    margin-top: 0;
+  }
+}
