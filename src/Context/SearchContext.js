@@ -1,4 +1,5 @@
 import React from 'react'
+// react search context
 
 const SearchContext = React.createContext({
   searchInput: '',
