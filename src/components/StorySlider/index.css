@@ -40,18 +40,25 @@
 .story-view-container {
   width: 70%;
   height: 60vh;
+  background-color: black;
   display: flex;
   flex-direction: column;
   align-self: center;
   margin-top: 30px;
+  padding: 0;
 }
 .loader-container-story {
-  background-color: black;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.story-profile-close {
   display: flex;
   justify-content: space-between;
   align-items: center;
-padding-left: 20px;  
-padding-right: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;  
 }
 .view-name {
   color: #ffffff;
@@ -72,5 +79,30 @@ padding-right: 20px;
     width: 100%;
     height: 80vh;
     margin-top: 0;
+  }
+}
+.progress-bar {
+  width: 100%;
+  height: 3px;
+  margin: 10px 0;
+  background-color: rgb(209, 208, 208);
+  position: relative;
+}
+
+.progress {
+  width: 20%;
+  height: 100%;
+  background-color: #FFFFFF; 
+  animation: move 2s infinite linear;
+  position: absolute;
+  left: 0;
+}
+
+@keyframes move {
+  from {
+    left: -100px;
+  }
+  to {
+    left: calc(100% - 100px);
   }
 }

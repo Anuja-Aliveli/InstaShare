@@ -115,12 +115,16 @@ class UserProfile extends Component {
     return (
       <div className="story-view-container">
         <div className="loader-container-story">
-          <Loader type="Watch" color="#ffffff" height={30} width={30} />
-          <p className="view-name">{storyName}</p>
-          <AiOutlineClose
-            className="close-icon-story"
-            onClick={this.onCloseStory}
-          />
+          <div className="progress-bar">
+            <div className="progress" />
+          </div>
+          <div className="story-profile-close">
+            <p className="view-name">{storyName}</p>
+            <AiOutlineClose
+              className="close-icon-story"
+              onClick={this.onCloseStory}
+            />
+          </div>
         </div>
         <img className="view-image" src={storyImage} alt="story" />
       </div>

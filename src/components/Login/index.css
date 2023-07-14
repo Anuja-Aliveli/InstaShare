@@ -141,34 +141,16 @@
   line-height: 16px;
   color: #ff0b37;
 }
-
-.popup-content {
-  background-color: transparent;
-  width: 70%;
-  height: 100%;
-  border-radius: 16px;
-  text-align: flex-start;
-}
 .icon-close {
   color: #231f20;
   font-size: 20px;
-  margin-top: 10px;
-}
-.modal-container {
-  background-color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  width: 400px;
-  overflow: auto;
 }
 .close-button {
   align-self: flex-end;
   background-color: transparent;
-  width: 28px;
-  height: 28px;
   border: none;
   margin-bottom: 0;
+  margin-top: 20px;
   outline: none;
   cursor: pointer;
 }
@@ -200,34 +182,55 @@
   margin-top: 5px;
   margin-bottom: 5px;
 }
-@media screen and (max-width: 991px) {
-  .popup-content {
-    width: 100%;
-  }
-  .modal-container {
-      height: 350px;
-  }
-}
-.popup-container {
-    width: 100%;
-}
 .trigger-button {
-    border: none;
-    outline: none;
-    cursor: pointer;
-    background-color: transparent;
-    margin-top: 15px;
-    display: flex;
-        justify-content: space-between;
-        margin-bottom: 0;
-        width: 100%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0;
+  width: 100%;
 }
 .forgot {
-    color: #8322f3;
-    font-size: 13px;
+  color: #8322f3;
+  font-size: 13px;
 }
 .show {
-    color: #2678c5;
-    font-size: 13px;
-    text-decoration: underline;
+  color: #2678c5;
+  font-size: 13px;
+  text-decoration: underline;
+}
+.popup-container {
+  width: 100%;
+}
+
+.popup-content {
+  background-color: transparent;
+  width: 70%;
+  height: 100%;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-container {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 400px;
+  overflow: auto;
+  align-self: flex-start;
+}
+@media screen and (max-width: 991px) {
+  .popup-content {
+    width: 90vw;
+  }
+
+  .modal-container {
+    width: 90vw;
+    height: 50%;
+  }
 }

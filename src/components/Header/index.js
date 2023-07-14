@@ -62,7 +62,7 @@ const Header = props => {
                   <img
                     className="logo-image-header"
                     alt="website logo"
-                    src="https://res.cloudinary.com/dgkw0cxnh/image/upload/v1686982081/Standard_Collection_8_xq2xkd.png"
+                    src="https://res.cloudinary.com/dgkw0cxnh/image/upload/v1688631998/logo_u0ypuv.png"
                   />
                 </Link>
                 <p className="logo-text-header">Insta Share</p>
